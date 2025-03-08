@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -20,22 +21,32 @@
 
     <section>
         <div class="capa">
-            <img src="https://static.thenounproject.com/png/7729-200.png" alt="Foto de perfil" class="foto-perfil">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQGF1ji9U1wS4A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1721788043613?e=1746662400&v=beta&t=XqwBVEDveiKytFxoKd5EYX32GmTO2gPrjwCM6LUGlg4" alt="Foto de perfil" class="foto-perfil">
             <div class="dados">
-                <h1>Gabriel Araújo</h1>
+                <h1>Gabriel<br>Sousa</h1>
                 <p>Analista de Service Desk Pleno</p>
                 <p>Transportes Della Volpe</p>
             </div>
+            <div class="contatos">
+                <h2>Contatos</h2>
+                <ul class="list-contatos">
+                    <li><i class="fas fa-phone"></i><a href="tel:+5511977603021">(11)977603021</a></li>
+                    <li><i class="fas fa-envelope"></i><a href="mailto:gabriiel.sousa161@gmail.com">gabriiel.sousa161@gmail.com</a></li>
+                    <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/gabriel-arjs/" target="_blank">in/gabriel-arjs</a></li>
+                </ul>
+            </div>
         </div>
 
-        <div class="sessao" id="sobre">
+        <div class="sobre">
             <h2>Sobre</h2>
             <p>Olá, me chamo Gabriel, tenho 23 anos e sou formado em Análise e Desenvolvimento de Sistemas. Atualmente trabalho como Analista de Service Desk Pleno na empresa Transportes Della Volpe.</p>
+            <p>Tenho experiência em suporte técnico, resolução de problemas e atendimento ao cliente. Sou apaixonado por tecnologia e estou sempre em busca de novos conhecimentos e desafios.</p>
         </div>
 
         <div class="sessao" id="experiencia">
             <h2>Experiência Profissional</h2>
             <div class="timeline-item">
+                <div class="bola atual"></div>
                 <div class="timeline-content">
                     <h3>Analista de Service Desk Pleno</h3>
                     <p>Transportes Della Volpe</p>
@@ -44,6 +55,7 @@
             </div>
 
             <div class="timeline-item">
+                <div class="bola old"></div>
                 <div class="timeline-content">
                     <h3>Analista de Service Desk Júnior</h3>
                     <p>Transportes Della Volpe</p>
@@ -52,6 +64,7 @@
             </div>
 
             <div class="timeline-item">
+                <div class="bola old"></div>
                 <div class="timeline-content">
                     <h3>Estagiário em Service Desk</h3>
                     <p>Transportes Della Volpe</p>
@@ -64,9 +77,11 @@
         <div class="sessao" id="projetos">
             <h2>Projetos</h2>
             <ul>
-                <li>Angular Blog</li>
-                <li>Angular E-commerce </li>
-                <li>Java Quiz</li>
+                <li>Angular - Blog</li>
+                <li>Angular - E-commerce </li>
+                <li>Java - Quiz</li>
+                <li>Inoic - Gerenciador de Task</li>
+                <li>Linguagem C - Comparador de algoritimos de ordenação</li>
 
             </ul>
 
@@ -75,7 +90,7 @@
         <div class="sessao" id="certificados">
             <h2>Certificados</h2>
 
-            <ul>
+            <ul class="certificados">
                 <li>Cisco CCNAv7
                     <img src="" alt="" class="img-certificado"><br>
                     <img src="https://raw.githubusercontent.com/gabrielarjs/certificados/refs/heads/main/Cursos/Cisco/CCNAv7.png" alt="CCNAv7" class="img-certificado">
@@ -96,14 +111,7 @@
 
         </div>
 
-        <div class="sessao" id="contatos">
-            <h2>Contato</h2>
-            <ul class="list-contatos">
-                <li>Telefone: <a href="tel:+5511977603021">(11)977603021</a></li>
-                <li>E-mail: <a href="mailto:gabriiel.sousa161@gmail.com">gabriiel.sousa161@gmail.com</a></li>
-                <li>Linkedin: <a href="https://www.linkedin.com/in/gabriel-arjs/" target="_blank">in/gabriel-arjs</a></li>
-            </ul>
-        </div>
+            
     </section>
     
 </body>

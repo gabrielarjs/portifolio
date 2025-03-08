@@ -45,96 +45,115 @@ section{
 
 .capa{
     display: flex;
+    margin-left: 20;
+    background-color: #0049ac;
+    color: #fff;
+
 }
 
 .foto-perfil{
     width: 200px;
     height: auto;
+}
 
+.sessao{
+    margin-left: 20px;
+}
+
+.sobre{
+    padding: 20px;
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+.sobre p{
+    text-align: justify;
 }
 
 .dados{
     margin-left: 20px;
 }
 
-.timeline {
-    position: relative;
-    margin: 0 auto;
-    padding: 20px 0;
-    width: 90%;
+.contatos{
+    margin-left: 80px;
 }
 
-.timeline::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 4px;
-    height: 100%;
-    background: #C5C5C5;
+.list-contatos{
+    list-style-type: none;
+    padding: 0;
 }
 
-.timeline-item {
-    position: relative;
-    margin: 20px 0;
-    width: 50%;
-    padding: 20px;
-    box-sizing: border-box;
+.list-contatos li{
+    margin: 5px 0;
 }
 
-.timeline-item:nth-child(odd) {
-    left: 0;
+.list-contatos li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
 }
 
-.timeline-item:nth-child(even) {
-    left: 50%;
+section{
+    margin: 0;
+    padding: 0;
 }
 
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    top: 20px;
-    right: -8px;
-    width: 16px;
-    height: 16px;
-    background: #C5C5C5;
+.dados h1 {
+    font-size: 3.5em; 
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    margin: 10px 0; 
+}
+
+.timeline-item{
+    margin-bottom: 10px;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.bola{
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    z-index: 1;
+    display: inline-block;
+    margin-left: -10px;
+    margin-top: -10px;
 }
 
-.timeline-item:nth-child(even)::before {
-    left: -8px;
-    right: auto;
+.old{
+    background-color: #333;
 }
 
-.timeline-item:nth-child(odd)::after {
-    content: '';
-    position: absolute;
-    top: 20px;
-    left: 100%;
-    margin-left: -8px;
-    border-width: 8px;
-    border-style: solid;
-    border-color: transparent transparent transparent #fff;
+.atual{
+    background-color: #0049ac;
 }
 
-.timeline-item:nth-child(even)::after {
-    content: '';
-    position: absolute;
-    top: 20px;
-    right: 100%;
-    margin-right: -8px;
-    border-width: 8px;
-    border-style: solid;
-    border-color: transparent #fff transparent transparent;
+
+.timeline-content{
+    margin-left: 20px;
 }
 
-.timeline-content {
-    padding: 20px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    position: relative;
-    z-index: 2;
+.timeline-content h3{
+    margin: 0;
+    padding: 0;
+}
+
+
+.certificados{
+    columns: 3;
+}
+
+
+@media (max-width: 1000px) {
+    .certificados {
+        columns: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .certificados {
+        columns: 1;
+    }
 }
