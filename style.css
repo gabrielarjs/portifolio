@@ -12,7 +12,6 @@ body{
 header{
     margin: 0;
     padding: 0;
-
 }
 
 nav{
@@ -35,6 +34,11 @@ nav ul li{
 nav ul li a{
     color: white;
     text-decoration: none;
+}
+
+nav ul li a:hover{
+    transition: 0.5s;
+    font-size: 20px;
 }
 
 
@@ -61,6 +65,7 @@ section{
 }
 
 .sobre{
+    transition: 1s;
     padding: 20px;
     background-color: #333;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -156,4 +161,15 @@ section{
     .certificados {
         columns: 1;
     }
+}
+
+.animated-content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.animated-content.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
