@@ -50,7 +50,7 @@ section{
 .capa{
     display: flex;
     margin-left: 20;
-    background-color: #0049ac;
+    background-color: #002166;
     color: #fff;
 
 }
@@ -66,7 +66,7 @@ section{
 
 .sobre{
     transition: 1s;
-    padding: 20px;
+    padding: 40px;
     background-color: #333;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #fff;
@@ -201,8 +201,25 @@ section{
 .tecnologia{
     width: 80px;
     margin: 20px;
+    transition: 0.3s;
 }
 
+.tecnologia:hover{
+    width: 100px;
+    margin: 0;
+}
+
+.title{
+    font-size: large;
+}
+
+.desc{
+    display: none;
+}
+
+.title:hover ~ .desc{
+    display: block;
+}
 
 footer{
     background-color: #333;
